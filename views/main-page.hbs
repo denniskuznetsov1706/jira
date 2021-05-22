@@ -1,0 +1,29 @@
+<h1>Current Jira data</h1>
+
+
+
+<form action="/filter" method="POST">
+
+{{#if ja.length}}
+   
+    {{#each ja}}
+
+    <button type="submit" class="btn" name="filter" value="{{this.searchUrl}}">{{this.name}}</button>    
+
+ 
+    {{/each}}
+    
+   
+
+{{else}}
+
+
+        
+         <h1><label>NO DATA!!!!</label> </h1>
+
+
+
+{{/if}}
+<br>
+
+</form >
